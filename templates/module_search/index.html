@@ -1,0 +1,52 @@
+{% extends "module_search/master.html" %}
+{% block content %}
+    <input id='web-root' type="hidden" value="{{data['base_url']}}"/>
+    <input id='css' type="hidden" value="{{data['base_url']}}static/css"/>
+    <input id='js' type="hidden" value="{{data['base_url']}}static/js"/>
+    <input id='images' type="hidden" value="{{data['base_url']}}static/images"/>
+    <input id='ejs-templates' type="hidden" value="{{data['base_url']}}static/templates"/>
+
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item active" href="#">Home</a>
+                <a class="blog-nav-item" href="#">New features</a>
+                <a class="blog-nav-item" href="#">Press</a>
+                <a class="blog-nav-item" href="#">New hires</a>
+                <a class="blog-nav-item" href="#">About</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="blog-header">
+            <h1 class="blog-title">Clotify Search Demo</h1>
+        </div>
+        <div class="row search-action">
+            <div class="col-sm-12">
+                <div class="input-group">
+                    <span class="input-group-addon">Search - User</span>
+                    <input type="text" class="form-control user-search" placeholder="username" />
+                </div>
+                <br />
+                <div class="input-group">
+                    <span class="input-group-addon">Search Outfit</span>
+                    <input type="text" class="form-control outfit-search" placeholder="outfit name" />
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-10 blog-main">
+
+            </div><!-- /.blog-main -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+        <p>Template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@sigma-solutions</a>.</p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+{% endblock %}

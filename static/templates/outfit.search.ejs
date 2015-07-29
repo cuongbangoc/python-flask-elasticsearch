@@ -1,0 +1,22 @@
+<% for (var i = 0; i < data['outfits'].length; i++){
+    var outfit = data['outfits'][i];
+%>
+    <div class="blog-post">
+        <h3 class="blog-post-title"> <%= outfit.name %></h3>
+
+        <p>User ID: <%= outfit.id %> </p>
+        <p> <strong>User Name : <%= outfit.name %> </strong></p>
+        <p>Images :
+            <% if (outfit.images != "undefined"){ %>
+            <%= outfit.images %>
+            <%}%>
+
+            <% if (outfit.image != "undefined"){ %>
+            <%= outfit.image %>
+            <%}%>
+
+        </p>
+    </div>
+
+    <hr />
+<%}%>

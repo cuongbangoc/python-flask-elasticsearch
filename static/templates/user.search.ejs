@@ -1,0 +1,13 @@
+<% for (var i = 0; i < data['users'].length; i++){
+    var user = data['users'][i];
+%>
+    <div class="blog-post">
+        <h3 class="blog-post-title"> <%= user.name %></h3>
+
+        <p>User ID: <%= user.id %> </p>
+        <p><strong>User Name : <%= user.name %> </strong></p>
+        <p>Avatar : <%= user.avatar %> </p>
+    </div>
+
+    <hr />
+<%}%>
