@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>{{ title }} - helloworld</title>
+    <title>{{ title }} - Search Demo</title>
     <style>
         td {padding: 10px; text-align:center;}
 	.ui-autocomplete-loading {
@@ -9,14 +9,22 @@
 	#search { width: 25em; }
     </style>
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/libs/bootstrap.min.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/libs/jquery-ui.css')}}">
+
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
   </head>
   <body>
-      {% block content %}{% endblock %}
+
+      {% block content %}
+      {% endblock %}
 
       <script type="text/javascript" src="{{url_for('static', filename='js/libs/jquery.min.js')}}"></script>
       <script type="text/javascript" src="{{url_for('static', filename='js/libs/bootstrap.min.js')}}"></script>
       <script type="text/javascript" src="{{url_for('static', filename='js/libs/ejs_production.js')}}"></script>
+
+      <script src="{{url_for('static', filename='js/libs/jquery-ui.js')}}"></script>
+
       <script type="text/javascript" src="{{url_for('static', filename='js/main.js')}}"></script>
   </body>
 </html>
